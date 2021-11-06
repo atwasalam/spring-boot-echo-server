@@ -12,7 +12,8 @@
 	<modules>
 		<module>spring-echo-server</module>
 		<module>spring-echo-server-docker</module>
-	</modules>
+        <module>spring-echo-server-testing</module>
+    </modules>
 
 	<groupId>com.spring.echo-server</groupId>
 	<artifactId>echo-server-parent</artifactId>
@@ -23,6 +24,9 @@
 		<maven.compiler.source>8</maven.compiler.source>
 		<maven.compiler.target>8</maven.compiler.target>
 		<javax.servlet.version>2.5</javax.servlet.version>
+		<!--Testing framework versions-->
+		<test.cucumber.version>7.0.0</test.cucumber.version>
+		<test.cucumber.gherkin.version>22.0.0</test.cucumber.gherkin.version>
 		<!--Docker image properties-->
 		<docker.image.prefix>spring</docker.image.prefix>
 		<docker.image.name>echo-server</docker.image.name>
